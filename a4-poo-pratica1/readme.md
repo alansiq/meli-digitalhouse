@@ -30,9 +30,10 @@ objeto do tipo Pessoa e vamos construí-lo passando apenas um valor para o nome 
 para a idade no construtor. Isto é possivel? O que acontece se tentarmos fazer isso?
 
 
-- [ ] Exercício 5
-Na classe Pessoa vamos implementar os seguintes métodos: calcularIMC(), a fórmula para
-calculá-lo é: peso/(altura^2) - (peso expresso em kg e altura em metros). Se este cálculo
+- [X] Exercício 5
+Na classe Pessoa vamos implementar os seguintes métodos: 
+    - [X] calcularIMC():
+      a fórmula para calculá-lo é: peso/(altura^2) - (peso expresso em kg e altura em metros). Se este cálculo
 retornar um valor menor que 20, a função deve retornar -1, se retornar um número entre 20 e
 25, o método deve retornar 0, por fim, se retornar um número maior que 25 deve retornar 1.
 Uma vez que o método anterior foi criado, vamos adicionar o método ehMaiorIdade() que
@@ -41,7 +42,7 @@ considerada, a partir de 18 anos. Por fim, adicione um método toString() que re
 as informações da pessoa.
 Lembre-se, você pode usar os métodos da classe java.lang.Math para calcular a potência.
 
-- [ ] Exercício 6
+- [X] Exercício 6
 A partir da classe Main vamos calcular o IMC da última pessoa que criamos (aquela que
 criamos corretamente através do construtor que recebe todos os atributos como parâmetro).
 Também descobriremos se a pessoa é maior de idade ou não; Observe que em ambos os
@@ -52,9 +53,9 @@ dados e as mensagens fica a seu critério, mas deve ser legível e descritivo pa
 saída do programa.
 
 Referências:
-* IMC   		--   	Nivel de peso
-* < 20  		--   	Abaixo do peso
-* > 20 & < 25		-- 	Saudável
-* > 25  		-- 	Sobrepeso
+* -- IMC   		--   	Nivel de peso
+* -- < 20  		--   	Abaixo do peso
+* -- > 20 & < 25		-- 	Saudável
+* -- > 25  		-- 	Sobrepeso
 
 
