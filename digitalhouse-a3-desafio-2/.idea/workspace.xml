@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de31fb77-a21c-42e2-87bf-8f582c73562c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/digitalhouse-a3-desafio.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio1/src/Challenge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/digitalhouse-a3-desafio-2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/out/production/digitalhouse-a3-desafio-2/ConsoleHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/out/production/digitalhouse-a3-desafio-2/MarathonApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/out/production/digitalhouse-a3-desafio-2/services/PersonServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/out/production/digitalhouse-a3-desafio-2/services/RaceServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/src/ConsoleHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/src/MarathonApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/src/services/PersonServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../a3-java-desafio2/src/services/RaceServices.java" beforeDir="false" />
-    </list>
+    <list default="true" id="de31fb77-a21c-42e2-87bf-8f582c73562c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +72,7 @@
       <workItem from="1646998656443" duration="1752000" />
       <workItem from="1647006076615" duration="11000" />
       <workItem from="1647006093328" duration="8000" />
+      <workItem from="1647116025202" duration="29000" />
     </task>
     <servers />
   </component>

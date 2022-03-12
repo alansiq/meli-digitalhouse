@@ -4,19 +4,25 @@ import services.RaceServices;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.System.*;
+
 public class ConsoleHandler {
 
-    private Scanner console = new Scanner(System.in);
+    private Scanner console;
     private RaceServices raceServices = new RaceServices();
     private PersonServices personServices = new PersonServices();
 
+    public ConsoleHandler(Scanner console) {
+        this.console = console;
+    }
+
     public void execute() {
 
-        System.out.println("Utilize uma das funções a seguir:");
-        System.out.println("1) Listar participantes");
-        System.out.println("2) Nova inscrição");
-        System.out.println("3) Cancelar inscrição");
-        System.out.println("0) SAIR");
+        out.println("Utilize uma das funções a seguir:");
+        out.println("1) Listar participantes");
+        out.println("2) Nova inscrição");
+        out.println("3) Cancelar inscrição");
+        out.println("0) SAIR");
 
         int response = this.getUserResponseInt();
 
@@ -34,16 +40,16 @@ public class ConsoleHandler {
                 this.console.close();
                 break;
             default:
-                System.out.println("Opção inválida. Reiniciando sistema");
+                out.println("Opção inválida. Reiniciando sistema");
                 this.execute();
         }
     }
 
     public void listarParticipantes() {
-        System.out.println("-------------------------------------------------------------------------");
-        System.out.println("1) Circuito pequeno");
-        System.out.println("2) Circuito médio");
-        System.out.println("3) Circuito grande");
+        out.println("-------------------------------------------------------------------------");
+        out.println("1) Circuito pequeno");
+        out.println("2) Circuito médio");
+        out.println("3) Circuito grande");
 
         int response = this.getUserResponseInt();
         if (response > 3 || response < 1) this.execute();
@@ -54,24 +60,24 @@ public class ConsoleHandler {
     }
 
     public void novaInscricao() {
-        System.out.println("-------------------------------------------------------------------------");
-        System.out.println("Insira o primeiro nome do participante:");
+        out.println("-------------------------------------------------------------------------");
+        out.println("Insira o primeiro nome do participante:");
         String nome = this.getUserResponseString();
-        System.out.println("Insira sua idade:");
+        out.println("Insira sua idade:");
         int idade = this.getUserResponseInt();
-        System.out.println("Qual corrida você deseja participar?");
-        System.out.println("1) Circuito pequeno");
-        System.out.println("2) Circuito médio");
-        System.out.println("3) Circuito grande");
+        out.println("Qual corrida você deseja participar?");
+        out.println("1) Circuito pequeno");
+        out.println("2) Circuito médio");
+        out.println("3) Circuito grande");
         int corrida = this.getUserResponseInt();
 
 
-        int personId = personServices.createPerson(nome, idade);
-        raceServices.insertParticipant(personId, corrida);
+//        int personId = personServices.createPerson(nome, idade);
+//        raceServices.insertParticipant(personId, corrida);
 
         // TODO RETORNAR VALOR DA INSCRIÇÃO
 
-        System.out.println("Cadastro concluído com sucesso");
+        out.println("Cadastro concluído com sucesso");
     }
 
     public void cancelarInscricao() {

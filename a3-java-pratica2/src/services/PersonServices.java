@@ -1,52 +1,26 @@
 package services;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
 
 public class PersonServices {
 
-    private TreeMap<Integer, ArrayList<Object>> personList = new TreeMap<Integer, ArrayList<Object>>();
+    public void createPerson() {
+        System.out.println("-------------------------------------------------------------------------");
+        System.out.println("Insira o primeiro nome do participante:");
+        String nome = this.getUserResponseString();
+        System.out.println("Insira sua idade:");
+        int idade = this.getUserResponseInt();
+        System.out.println("Qual corrida você deseja participar?");
+        System.out.println("1) Circuito pequeno");
+        System.out.println("2) Circuito médio");
+        System.out.println("3) Circuito grande");
+        int corrida = this.getUserResponseInt();
 
-    public int createPerson(String nome, int idade) {
-        Integer lastId = this.getLastId();
-        ArrayList<Object> person = new ArrayList<>();
-        person.add(nome);
-        person.add(idade);
-        personList.put(lastId + 1, person);
 
-        return lastId + 1;
+        int personId = personServices.createPerson(nome, idade);
+        raceServices.insertParticipant(personId, corrida);
+
+        // TODO RETORNAR VALOR DA INSCRIÇÃO
+
+        System.out.println("Cadastro concluído com sucesso");
     }
-
-    public boolean deletePerson(Integer id) {
-
-        try {
-            personList.remove(id);
-            return true;
-        } catch(Error e) {
-            return false;
-        }
-
-    }
-
-    public void listPerson(Integer id) {
-        personList.get(id);
-
-        System.out.println(id + personList.get(id).toString());
-    }
-
-    public int getLastId() {
-        try {
-            if(personList.isEmpty()) {
-                return 0;
-            }
-            return personList.lastKey();
-
-
-        } catch (Error e) {
-            return 0;
-        }
-    }
-
 }
