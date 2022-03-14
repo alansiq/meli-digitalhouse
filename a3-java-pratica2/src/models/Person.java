@@ -11,9 +11,18 @@ public class Person {
     private BloodType bloodType;
 
 
-    public Person(String rg, String firstname, String lastname, int age, String phone, String emergencyPhone, BloodType bloodType) {
+    public Person(
+                    Long id,
+                    String rg,
+                    String firstname,
+                    String lastname,
+                    int age,
+                    String phone,
+                    String emergencyPhone,
+                    BloodType bloodType
+                    ) {
 
-        // TODO set person ID on constructor method
+        this.id = id;
         this.rg = rg;
         this.firstname = firstname;
         this.lastname = lastname;
