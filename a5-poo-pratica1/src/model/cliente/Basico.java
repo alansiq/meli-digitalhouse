@@ -12,5 +12,20 @@ public class Basico {
     Saque saque = new Saque();
 
 
+    public void consultarSaldo(boolean valido) {
+        this.consultaSaldo.consultarSaldo(valido);
+    }
+
+    public void sacar(boolean valido) {
+        this.saque.sacar(valido);
+    }
+
+    public void depositar(boolean valido) {
+        this.deposito.depositar(valido);
+    }
+
+    public void pagar(boolean valido) {
+        this.pagamentoServicos.pagar(valido);
+    }
 
 }

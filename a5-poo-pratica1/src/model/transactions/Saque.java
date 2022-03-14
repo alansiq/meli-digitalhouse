@@ -1,13 +1,21 @@
 package model.transactions;
 
 public class Saque implements Transaction {
-    @Override
-    public void transactionOk() {
 
+    public void sacar(boolean valido) {
+        if(valido) {
+            transactionOk();
+            return;
+        }
+
+        transactionNotOk();
     }
 
-    @Override
-    public void transactionNotOk() {
+    public void transactionOk() {
+        System.out.println("Saque concluído com sucesso");
+    }
 
+    public void transactionNotOk() {
+        System.out.println("Não foi possível concluir saque");
     }
 }
