@@ -53,7 +53,7 @@ A partir disso, levando em consideração os gostos alimentares de cada animal (
 cachorro são considerados carnívoros e a vaca herbívora), incluir as interfaces
 necessárias para contemplar os métodos comerCarne ou comerPasto.
 Feito isso, realize a criação de diferentes animais e a invocação de suas respectivas
-implementações de métodos no Main.
+implementações de métodos no exercicio1.Main.
 Como proposta extra, sugere-se criar um método para comerAnimal onde, a partir da
 passagem de um objeto de qualquer tipo de animal como parâmetro, chama o
 método comer de acordo com o referido animal.
