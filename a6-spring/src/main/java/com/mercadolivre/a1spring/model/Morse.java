@@ -52,8 +52,25 @@ public class Morse {
 
     public static String decode(String morsecode) {
 
+        String[] wordsAsVector = morsecode.split("   ");
+        String phrase = "";
 
-        return "teste";
+        for (int i = 0; i < wordsAsVector.length; i++) {
+            String[] morseCharacter = wordsAsVector[i].split(" ");
+            String word = "";
+
+            for (int j = 0; j < morseCharacter.length; j++) {
+
+                word = word + morse.get(morseCharacter[j]);
+
+            }
+
+            phrase = phrase + word + " ";
+
+        }
+
+
+        return phrase;
     }
 
 }

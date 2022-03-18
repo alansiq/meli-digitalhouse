@@ -11,8 +11,7 @@ public class Decode {
 
     @PostMapping("/morse")
     @ResponseBody
-    public void decode(@RequestBody String morsecode) {
-
-        Morse.decode(morsecode);
+    public String decode(@RequestBody String morsecode) {
+        return Morse.decode(morsecode);
     }
 }
