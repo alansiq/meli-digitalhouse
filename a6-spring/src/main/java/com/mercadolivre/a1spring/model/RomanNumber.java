@@ -1,4 +1,4 @@
-package com.mercadolivre.a1spring.modal;
+package com.mercadolivre.a1spring.model;
 
 import java.util.TreeMap;
 
