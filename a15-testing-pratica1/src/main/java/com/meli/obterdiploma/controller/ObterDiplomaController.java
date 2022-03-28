@@ -5,6 +5,8 @@ import com.meli.obterdiploma.service.IObterDiplomaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 public class ObterDiplomaController {
 
@@ -12,7 +14,7 @@ public class ObterDiplomaController {
     IObterDiplomaService service;
 
     @PostMapping("/analyzeScores")
-    public StudentDTO analyzeScores(@RequestBody StudentDTO rq) {
+    public StudentDTO analyzeScores(@RequestBody @Valid StudentDTO rq) {
         return service.analyzeScores(rq);
     }
 }
