@@ -11,11 +11,16 @@ import java.util.Set;
 @Service
 public class StudentService implements IStudentService {
 
-    @Autowired
+    final
     IStudentDAO studentDAO;
 
-    @Autowired
+    final
     IStudentRepository studentRepository;
+
+    public StudentService(IStudentDAO studentDAO, IStudentRepository studentRepository) {
+        this.studentDAO = studentDAO;
+        this.studentRepository = studentRepository;
+    }
 
     @Override
     public void create(StudentDTO stu) {

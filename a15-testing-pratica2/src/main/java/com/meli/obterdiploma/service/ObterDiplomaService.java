@@ -12,8 +12,12 @@ import java.util.List;
 @Service
 public class ObterDiplomaService implements IObterDiplomaService {
 
-    @Autowired
+    final
     IStudentDAO studentDAO;
+
+    public ObterDiplomaService(IStudentDAO studentDAO) {
+        this.studentDAO = studentDAO;
+    }
 
     @Override
     public StudentDTO analyzeScores(Long studentId) {
