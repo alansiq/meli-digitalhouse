@@ -1,22 +1,40 @@
 package com.meli.obterdiploma;
 
-import com.meli.obterdiploma.repository.StudentDAO;
-import com.meli.obterdiploma.repository.StudentRepository;
+import com.meli.obterdiploma.repository.IStudentDAO;
+import com.meli.obterdiploma.repository.IStudentRepository;
 import com.meli.obterdiploma.service.StudentService;
+import org.junit.Before;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mockito;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.Mock;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 public class StudentServiceTests {
-    StudentDAO studentDAO = Mockito.mock(StudentDAO.class);
-    StudentRepository studentRepository = Mockito.mock(StudentRepository.class);
-    StudentService studentService = new StudentService(studentDAO, studentRepository);
+    @Mock
+    IStudentDAO studentDAO;
+
+    @Mock
+    IStudentRepository studentRepository;
+
+    @InjectMocks
+    StudentService studentService;
+
+    @Before
+    public void init() {
+        MockitoAnnotations.openMocks(this);
+    }
 
     @Test
+    @DisplayName("This test should fail")
     public void shouldFail() {
-        fail();
+        System.out.println(studentService.getAll());
     }
 }
